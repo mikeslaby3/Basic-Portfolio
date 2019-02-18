@@ -1,3 +1,11 @@
+/* header and footer styling of all pages */
+
+body {
+    background-image: url("../images/footer_lodyas.png");
+    padding: 0;
+    line-height: 150%;
+}
+
 header {
     background-color: #ffffff;
     border-bottom: solid;
@@ -9,8 +17,26 @@ header {
     top: 0;
 }
 
-#name {
+#header-container {
+    width: 960px;
+    margin: 0 auto;
+}
 
+#name {
+    color: #ffffff;
+    float: left;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    background-color: #4aaaa5;
+    text-align: center;
+    height: 70px;
+    width: 200px;
+    border-left: solid;
+    border-color: #4aaaa5;
+}
+
+nav {
+    float: right;
+    margin-top: 20px;
 }
 
 body {
@@ -18,6 +44,18 @@ body {
     padding: 0;
     line-height: 150%;
 }
+
+.footer {
+    border-top: 8px solid #4aaaa5;
+    height: 30px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #666666;
+    position: fixed;
+}
+
+/* index.html styling */
 
 #headshot {
     height: 220px;
@@ -30,7 +68,6 @@ body {
     background-color: #ffffff;
     margin: 0 auto;
     margin-top: 10%;
-    margin-bottom: 20%;
     border-style: solid;
     border-color: #dddddd;
 }
@@ -63,13 +100,6 @@ hr {
     margin-right: 5%;
 }
 
-footer {
-    background-color: #ffffff;
-    border-top: solid;
-    border-color:#4aaaa5;
-    height: 30px;
-    width: 100%;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-}
+/* contact.html styling */
+
+/* portfolio.html styling */
