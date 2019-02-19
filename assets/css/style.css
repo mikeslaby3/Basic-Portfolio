@@ -43,6 +43,7 @@ body {
     background-image: url("../images/footer_lodyas.png");
     padding: 0;
     line-height: 150%;
+    height: 600px;
 }
 
 .footer {
@@ -101,5 +102,74 @@ hr {
 }
 
 /* contact.html styling */
+
+.contact {
+    width: 960px;
+    height: 475px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    margin-top: 10%;
+    border-style: solid;
+    border-color: #dddddd;
+}
+
+#contact-header {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: #4aaaa5;
+    margin-left: 30px;
+}
+
+#form {
+    float: left;
+    margin-left: 30px;
+    margin-right: 20px;
+    margin-top: 15px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+}
+
+input[type=text] {
+    width: 900px;
+    height: 20px;
+    padding-left: 5px;
+    margin-top: 2px;
+    margin-bottom: 15px;
+}
+
+input[type=text]:focus {
+    background-color: lightblue;
+  }
+
+input[type=email] {
+    width: 900px;
+    height: 20px;
+    padding-left: 5px;
+    margin-top: 2px;
+    margin-bottom: 15px;
+}
+
+input[type=email]:focus {
+    background-color: lightblue;
+}
+
+textarea {
+    width: 892px;
+    padding: 10px 8px;
+    resize: none;
+    margin-top: 2px;
+    border: solid 1px;
+}
+
+input[type=submit] {
+    cursor: pointer;
+    background-color: #4aaaa5;
+    color: white;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 15px;
+    height: 30px;
+    width: 100px;
+    margin-top: 10px;
+}
+
 
 /* portfolio.html styling */
