@@ -173,3 +173,58 @@ input[type=submit] {
 
 
 /* portfolio.html styling */
+
+.portfolio {
+    width: 960px;
+    height: 800px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    margin-top: 10%;
+    border-style: solid;
+    border-color: #dddddd;
+}
+
+#portfolio-header {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: #4aaaa5;
+    margin-left: 30px;
+}
+
+.row-1 {
+    float: left;
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 250px;
+    height: 200px;
+    position: relative;
+}
+
+.row-2 {
+    float: left;
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 250px;
+    height: 200px;
+    position: relative;
+}
+
+
+.row-3 {
+    float: left;
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 250px;
+    height: 200px;
+    position: relative;
+}
+
+.image-text {
+    position: absolute;
+    top: 70%;
+    width: 250px;
+    height: 50px;
+    background-color: #4aaaa5;
+    color: white;
+    text-align: center;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
