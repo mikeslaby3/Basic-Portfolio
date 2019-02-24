@@ -50,7 +50,8 @@ header {
 /* nav bar styling */
 
 .navlinks {
-    padding-right: 13px;
+    padding-left: 10px;
+    color: #777777;
 }
 
 nav {
