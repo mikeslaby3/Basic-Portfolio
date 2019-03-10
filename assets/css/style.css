@@ -231,10 +231,14 @@ input[type=submit] {
 }
 
 .image-column {
-    float: left;
     margin-left: 30px;
     margin-right: 10px;
     margin-top: 20px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
 }
 
 .image-container {
