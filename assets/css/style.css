@@ -1,4 +1,4 @@
-/* body, header, and footer styling of all pages */
+/* Body */
 
 body {
     background-image: url("../images/footer_lodyas.png");
@@ -7,10 +7,10 @@ body {
 }
 
 .content-container {
-    margin: 0;
-    padding: 0;
     min-height: 100vh;
 }
+
+/* Header */
 
 header {
     background-color: #ffffff;
@@ -43,6 +43,8 @@ header {
     border-color: #4aaaa5;
 }
 
+/* Footer */
+
 footer {
     border-top: 8px solid #4aaaa5;
     height: 30px;
@@ -62,7 +64,7 @@ footer {
     bottom: 0;
 }
 
-/* nav bar styling */
+/* Navbar Styling */
 
 .navlinks {
     padding-left: 10px;
@@ -91,7 +93,8 @@ nav a:hover {
     height: 440px;
     background-color: #ffffff;
     margin: 0 auto;
-    margin-top: 8%;
+    margin-top: 100px;
+    padding-bottom: 10px;
     border-style: solid;
     border-color: #dddddd;
     border-width: 2px;
@@ -104,15 +107,6 @@ nav a:hover {
     margin-left: 30px;
 }
 
-#headshot {
-    height: 220px;
-    width: 200px;
-    float: left;
-    margin-left: 30px;
-    margin-right: 20px;
-    margin-top: 20px;
-}
-
 hr {
     width: 900px;
     border-width: 1.5px;
@@ -121,21 +115,25 @@ hr {
     margin-top: 20px;
 }
 
-#hey-there {
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    color: #777777;
-    margin-top: 24px;
-    margin-right: 10%;
-    padding-bottom: 6px;
+.index-flex-container {
+    display: flex;
+    flex-direction: row;
 }
 
-.paragraph-2 {
+#headshot {
+    height: 220px;
+    width: 200px;
+    margin-left: 30px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.text-container {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: #777777; 
-    margin-left: 30px; 
+    margin-left: 20px; 
     margin-right: 6%;
     line-height: 1.8;
-    padding-bottom: 10px;
 }
 
 /* contact.html styling */
@@ -145,7 +143,7 @@ hr {
     height: 475px;
     background-color: #ffffff;
     margin: 0 auto;
-    margin-top: 8%;
+    margin-top: 100px;
     border-style: solid;
     border-color: #dddddd;
     border-width: 2px;
@@ -216,8 +214,8 @@ input[type=submit] {
     width: 960px;
     height: 850px;
     background-color: #ffffff;
-    margin: 0 auto;
-    margin-top: 8%;
+    margin: auto;
+    margin-top: 100px;
     margin-bottom: 8%;
     border-style: solid;
     border-color: #dddddd;
@@ -266,12 +264,168 @@ input[type=submit] {
 
 @media only screen and (max-width: 980px) {
 
+    body {
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 20px;
+    }
+
+    #header-container {
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 940px;
+    }
+
+    hr {
+        width: 92%;
+    }
+
+    .about-me {
+        width: 800px;
+    }
+
+    .contact {
+        margin-top: 100px;
+        width: 800px;
+    }
+
+    input[type=text] {
+        width: 720px;
+    }
+
+    input[type=email] {
+        width: 720px;
+    }
+
+    textarea {
+        width: 700px;
+    }
+
+    .portfolio {
+        width: 800px;
+    }
+
+    .flex-container {
+        justify-content: space-between;
+        margin-right: 21px;
+    }
+
 }
 
 @media only screen and (max-width: 768px) {
 
+    .about-me {
+        width: 720px;
+    }
+
+    #header-container {
+        width: 720px;
+    }
+
+    hr {
+        width: 91%;
+    }
+
+    .contact {
+        margin-top: 100px;
+        width: 720px;
+    }
+
+    input[type=text] {
+        width: 645px;
+    }
+
+    input[type=email] {
+        width: 645px;
+    }
+
+    textarea {
+        width: 635px;
+    }
+
+    .portfolio {
+        width: 720px;
+    }
+
+    .flex-container {
+        justify-content: space-between;
+        margin-right: 21px;
+    }
+
 }
 
 @media only screen and (max-width: 640px) {
+    
+    #header-container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        text-align: center;
+        width: 100vw;
+    }
+
+    #name {
+        width: 100%;
+    }
+
+    hr {
+        width: 90%;
+    }
+
+    .about-me {
+        margin-top: 150px;
+        width: 590px;
+    }
+
+    nav {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .index-flex-container {
+        flex-direction: column;
+    }
+
+    .text-container {
+        margin-left: 27px;
+    }
+
+    #headshot {
+        margin-left: 27px;
+        margin-bottom: 10px;
+    }
+
+    .contact {
+        margin-top: 150px;
+        width: 590px;
+        height: 450px;
+    }
+
+    input[type=text] {
+        width: 520px;
+    }
+
+    input[type=email] {
+        width: 520px;
+    }
+
+    textarea {
+        width: 510px;
+    }
+
+    .portfolio {
+        margin-top: 150px;
+        width: 590px;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .image-column {
+        margin: auto;
+        margin-top: 40px;
+    }
+        
 
 }
